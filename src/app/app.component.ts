@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 declare var $:any;
-declare function HOME_INIT([]):any;
-declare function INIT_SWIPER([]):any;
+//declare function HOME_INIT([]):any;
+//declare function INIT_SWIPER([]):any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,11 +14,11 @@ export class AppComponent {
   constructor(){
 
   }
-
+ /*
   ngOnInit():void{
     setTimeout(()=>{
       HOME_INIT($);
       INIT_SWIPER($);
     },50);
-  }
+  }*/
 }
