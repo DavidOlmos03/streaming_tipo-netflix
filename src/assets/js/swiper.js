@@ -1,15 +1,13 @@
-//(INIT_SWIPER(jQuery))(jQuery);
-
 function INIT_SWIPER(jQuery){
   jQuery('.swiper-nav').on('click touch', function (e) {
-	e.preventDefault();
-	let arrow = jQuery(this);
-	if (!arrow.hasClass('animate')) {
-		arrow.addClass('animate');
-		setTimeout(() => {
-			arrow.removeClass('animate');
-		}, 1600);
-	}
+    e.preventDefault();
+    let arrow = jQuery(this);
+    if (!arrow.hasClass('animate')) {
+      arrow.addClass('animate');
+      setTimeout(() => {
+        arrow.removeClass('animate');
+      }, 1600);
+    }
   });
   // home page slider start
   if (document.querySelectorAll('[data-swiper="home-banner-slider"]').length) {
@@ -117,7 +115,7 @@ function INIT_SWIPER(jQuery){
     var windowWidth = window.innerWidth;
     var direction = window.innerWidth <= 0 ? 'vertical' : 'horizontal';
     return direction;
-  }
+   }
   const sliderThumbs = new Swiper('[data-swiper="slider-thumbs"] [data-swiper="slider-thumbs-inner"]', {
     direction: 'vertical',
     spaceBetween: 24,
@@ -155,7 +153,7 @@ function INIT_SWIPER(jQuery){
       0:{
         direction: 'horizontal',
       },
-    768:{
+     768:{
         direction: 'vertical',
       }
     },
@@ -198,7 +196,6 @@ function INIT_SWIPER(jQuery){
     galleryTop.controller.control = galleryThumbs;
       galleryThumbs.controller.control = galleryTop;
   }
+
+  //gallary slider end
 }
-
-
-//gallary slider end

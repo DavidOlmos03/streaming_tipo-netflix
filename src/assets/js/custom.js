@@ -26,10 +26,7 @@ Index Of Script
 ------------------------------------------------
 Index Of Script
 ----------------------------------------------*/
-
 //(HOME_INIT(jQuery))(jQuery);
-
-
 function HOME_INIT(jQuery) {
 	"use strict";
 
@@ -324,4 +321,3 @@ function HOME_INIT(jQuery) {
 		  });
 	//});
 }
-
